@@ -1,7 +1,292 @@
-<DOCTYPE HTML>
-<html>
-  <body>
-    <h1> Welcome to my Personal Page</h1>
-    <p>Hosted on GitHub Pages!</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website" />
+  <title>Yuchan So</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Nav ─────────────────────────────────────────────── -->
+  <header class="top-nav" role="banner">
+    <div class="nav-inner">
+      <a href="#" class="nav-wordmark" aria-label="Home">Yuchan So</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#about"      class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects"   class="nav-link">Projects</a></li>
+          <li><a href="#resume"     class="nav-link">Resume</a></li>
+          <li><a href="#contact"    class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-ctas">
+        <a href="#contact"  class="btn btn-secondary">Say hello</a>
+        <a href="#resume"   class="btn btn-primary">View resume</a>
+      </div>
+      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#resume"     class="nav-link">Resume</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-ctas">
+      <a href="#contact" class="btn btn-secondary">Say hello</a>
+      <a href="#resume"  class="btn btn-primary">View resume</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── Hero (white canvas) ──────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" aria-label="Role label">College of Liberal Studies</p>
+          <h1 id="hero-headline" class="display-xl">
+            Hi, I'm<br /><span>Yuchan So.</span>
+          </h1>
+          <p class="body-lg hero-bio">
+            I'm interested in large language models, agent architectures,
+            multimodal perception, and long-term personalized memory.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#resume"  class="btn btn-secondary">View resume</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/profile.jpg"
+            alt="Photo of Your Name"
+            class="hero-photo"
+            width="400"
+            height="400"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About — Lime block ───────────────────────────── -->
+    <section id="about" class="section-canvas" aria-label="About">
+      <div class="container">
+        <div class="color-block color-block-lime">
+          <p class="eyebrow">About me</p>
+          <h2 class="display-lg">Exploring the<br />frontier of AI.</h2>
+          <p class="subhead">
+            I'm interested in using large language models, agent architectures,
+            multimodal perception, and long-term personalized memory.
+            I'm studying at the College of Liberal Studies, Seoul National University,
+            where I explore the intersections of AI, cognition, and human experience.
+          </p>
+          <div class="about-tags" aria-label="Skills">
+            <span class="chip">Python</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Go</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Docker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Experience — Lilac block ─────────────────────── -->
+    <section id="experience" class="section-canvas" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="color-block color-block-lilac">
+          <p class="eyebrow">Experience</p>
+          <h2 id="exp-heading" class="display-lg">Where I've<br />worked.</h2>
+          <ol class="timeline" reversed>
+            <li class="timeline-item">
+              <p class="caption timeline-date">2023 – Present</p>
+              <div class="timeline-body">
+                <h3 class="headline">Software Engineer</h3>
+                <p class="caption timeline-org">Company Name</p>
+                <p class="body">
+                  Brief description of your role and key contributions.
+                  Replace with your actual experience and achievements.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <p class="caption timeline-date">2021 – 2023</p>
+              <div class="timeline-body">
+                <h3 class="headline">Junior Developer</h3>
+                <p class="caption timeline-org">Previous Company</p>
+                <p class="body">
+                  Brief description of your responsibilities and impact here.
+                  Focus on outcomes over tasks.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <p class="caption timeline-date">2017 – 2021</p>
+              <div class="timeline-body">
+                <h3 class="headline">B.Sc. Computer Science</h3>
+                <p class="caption timeline-org">University Name</p>
+                <p class="body">
+                  Graduated with honours. Thesis on distributed systems.
+                  Dean's list 2019 &amp; 2020.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects — Cream block ───────────────────────── -->
+    <section id="projects" class="section-canvas" aria-labelledby="proj-heading">
+      <div class="container">
+        <div class="color-block color-block-cream">
+          <p class="eyebrow">Projects</p>
+          <h2 id="proj-heading" class="display-lg">Things I've<br />built.</h2>
+          <ul class="project-grid" role="list">
+            <li class="project-card">
+              <p class="caption card-eyebrow">Course Project · C++</p>
+              <h3 class="card-title">OOP Course Project</h3>
+              <p class="body-sm">
+                Designed and implemented a C++ project applying object-oriented
+                programming principles — class hierarchies, encapsulation,
+                and polymorphism.
+              </p>
+            </li>
+            <li class="project-card">
+              <p class="caption card-eyebrow">Club Activity · Web</p>
+              <h3 class="card-title">Programming Club</h3>
+              <p class="body-sm">
+                Participated in a web development study group, exploring
+                frontend technologies and collaborating with peers on
+                hands-on web projects.
+              </p>
+            </li>
+            <li class="project-card">
+              <p class="caption card-eyebrow">Personal Project · Python</p>
+              <h3 class="card-title">K-pop Idol Data Tracker</h3>
+              <p class="body-sm">
+                Searches for new information about K-pop idols and
+                automatically compiles it into a structured data file —
+                combining web scraping, data parsing, and personal interest.
+              </p>
+              <a href="https://github.com/julie-so06" class="btn btn-primary card-cta" target="_blank" rel="noopener">
+                View on GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Resume — Coral block ─────────────────────────── -->
+    <section id="resume" class="section-canvas" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="color-block color-block-coral">
+          <p class="eyebrow">Resume / CV</p>
+          <h2 id="resume-heading" class="display-lg">The full<br />picture.</h2>
+          <p class="subhead">
+            Download my CV as a PDF or open it in your browser to see my
+            complete work history, education, and skills in one place.
+          </p>
+          <div class="resume-ctas">
+            <a
+              href="assets/profile.pdf"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open resume PDF in a new tab"
+            >
+              Open PDF
+            </a>
+            <a
+              href="assets/profile.pdf"
+              class="btn btn-secondary"
+              download
+              aria-label="Download resume PDF"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact — Navy block ─────────────────────────── -->
+    <section id="contact" class="section-canvas" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="color-block color-block-navy">
+          <p class="eyebrow eyebrow-inverse">Contact</p>
+          <h2 id="contact-heading" class="display-lg display-inverse">
+            Let's talk.
+          </h2>
+          <p class="subhead subhead-inverse">
+            I'm always happy to chat about new projects, opportunities, or
+            just to say hello.
+          </p>
+          <ul class="contact-list" role="list">
+            <li class="contact-row">
+              <span class="caption caption-inverse contact-label">Email</span>
+              <a href="mailto:julieso@snu.ac.kr" class="contact-link">julieso@snu.ac.kr</a>
+            </li>
+            <li class="contact-row">
+              <span class="caption caption-inverse contact-label">GitHub</span>
+              <a href="https://github.com/julie-so06" class="contact-link" target="_blank" rel="noopener">
+                github.com/julie-so06
+              </a>
+            </li>
+          </ul>
+          <a href="mailto:julieso@snu.ac.kr" class="btn btn-inverse-primary">Send an email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer (white canvas) ───────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-wordmark">Yuchan So</p>
+      <p class="caption footer-copy">&copy; <span id="year"></span> · Built with plain HTML &amp; CSS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      mobileNav.setAttribute('aria-hidden', String(open));
+      mobileNav.classList.toggle('is-open', !open);
+      document.body.classList.toggle('nav-open', !open);
+    });
+
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        mobileNav.classList.remove('is-open');
+        document.body.classList.remove('nav-open');
+      });
+    });
+  </script>
+</body>
 </html>
